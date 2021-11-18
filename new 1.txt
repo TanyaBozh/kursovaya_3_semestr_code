@@ -1,0 +1,20 @@
+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
+
+data_ev_point.resize(N_events_per_file);
+	for (int temp_event_id = 0; temp_event_id < N_events_per_file; temp_event_id++)
+	{
+		data_ev_point[temp_event_id].resize(points_per_event);
+	}
+
+	run_size = N_events_per_file * points_per_event;	
+	data_tmp.resize(run_size);
+	
+	for (int temp_event_id = 0; temp_event_id < N_events_per_file; temp_event_id++)
+	{
+		for (int j = 0; j < points_per_event; j++)
+		{
+			const int abs_point = j + temp_event_id * points_per_event;
+			data_ev_point[temp_event_id][j] = data_tmp[abs_point];
+		}
+	}
+//создать другой двумерный массив - номер события+точки
