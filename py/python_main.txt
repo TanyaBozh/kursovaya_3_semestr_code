@@ -1,0 +1,202 @@
+from matplotlib.pyplot import *
+
+data_10KV_378 = []
+with open('10KV_run_378__ch_38.txt') as f:
+    for line in f:
+        data_10KV_378.append([float(x) for x in line.split()])
+        
+for i in range(len(data_10KV_378[0])):
+    data_10KV_378[0][i] =  data_10KV_378[0][i]/1000
+        
+plot(data_10KV_378[0], data_10KV_378[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+
+savefig('10KV_run_378__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_10KV_380 = []
+with open('10KV_run_380__ch_38.txt') as f:
+    for line in f:
+        data_10KV_380.append([float(x) for x in line.split()])
+        
+for i in range(len(data_10KV_380[0])):
+    data_10KV_380[0][i] =  data_10KV_380[0][i]/1000
+        
+plot(data_10KV_380[0], data_10KV_380[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+
+savefig('10KV_run_380__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_12KV_363 = []
+with open('12_run_363__ch_38.txt') as f:
+    for line in f:
+        data_12KV_363.append([float(x) for x in line.split()])
+        
+for i in range(len(data_12KV_363[0])):
+    data_12KV_363[0][i] =  data_12KV_363[0][i]/1000
+        
+plot(data_12KV_363[0], data_12KV_363[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+savefig('12KV_run_363__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_12KV_365 = []
+with open('12_run_365__ch_38.txt') as f:
+    for line in f:
+        data_12KV_365.append([float(x) for x in line.split()])
+        
+for i in range(len(data_12KV_365[0])):
+    data_12KV_365[0][i] =  data_12KV_365[0][i]/1000
+        
+plot(data_12KV_365[0], data_12KV_365[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+savefig('12KV_run_365__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_12KV_366 = []
+with open('12_run_366__ch_38.txt') as f:
+    for line in f:
+        data_12KV_366.append([float(x) for x in line.split()])
+        
+for i in range(len(data_12KV_366[0])):
+    data_12KV_366[0][i] =  data_12KV_366[0][i]/1000
+        
+plot(data_12KV_366[0], data_12KV_366[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+savefig('12KV_run_366__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_14KV_349 = []
+with open('14KV_run_349__ch_38.txt') as f:
+    for line in f:
+        data_14KV_349.append([float(x) for x in line.split()])
+        
+for i in range(len(data_14KV_349[0])):
+    data_14KV_349[0][i] =  data_14KV_349[0][i]/1000
+        
+plot(data_14KV_349[0], data_14KV_349[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+savefig('14KV_run_349__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_14KV_357 = []
+with open('14KV_run_357__ch_38.txt') as f:
+    for line in f:
+        data_14KV_357.append([float(x) for x in line.split()])
+        
+for i in range(len(data_14KV_357[0])):
+    data_14KV_357[0][i] =  data_14KV_357[0][i]/1000
+        
+plot(data_14KV_357[0], data_14KV_357[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+savefig('14KV_run_357__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_14KV_359 = []
+with open('14KV_run_359__ch_38.txt') as f:
+    for line in f:
+        data_14KV_359.append([float(x) for x in line.split()])
+        
+for i in range(len(data_14KV_359[0])):
+    data_14KV_359[0][i] =  data_14KV_359[0][i]/1000
+        
+plot(data_14KV_359[0], data_14KV_359[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+savefig('14KV_run_359__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_16KV_338 = []
+with open('16KV_run_338__ch_38.txt') as f:
+    for line in f:
+        data_16KV_338.append([float(x) for x in line.split()])
+        
+for i in range(len(data_16KV_338[0])):
+    data_16KV_338[0][i] =  data_16KV_338[0][i]/1000
+        
+plot(data_16KV_338[0], data_16KV_338[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+savefig('16KV_run_338__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_16KV_342 = []
+with open('16KV_run_342__ch_38.txt') as f:
+    for line in f:
+        data_16KV_342.append([float(x) for x in line.split()])
+        
+for i in range(len(data_16KV_342[0])):
+    data_16KV_342[0][i] =  data_16KV_342[0][i]/1000
+        
+plot(data_16KV_342[0], data_16KV_342[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+
+savefig('16KV_run_342__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_16KV_345 = []
+with open('16KV_run_345__ch_38.txt') as f:
+    for line in f:
+        data_16KV_345.append([float(x) for x in line.split()])
+        
+for i in range(len(data_16KV_345[0])):
+    data_16KV_345[0][i] =  data_16KV_345[0][i]/1000
+        
+plot(data_16KV_345[0], data_16KV_345[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+savefig('16KV_run_345__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_16KV_346 = []
+with open('16KV_run_346__ch_38.txt') as f:
+    for line in f:
+        data_16KV_346.append([float(x) for x in line.split()])
+        
+for i in range(len(data_16KV_346[0])):
+    data_16KV_346[0][i] =  data_16KV_346[0][i]/1000
+        
+plot(data_16KV_346[0], data_16KV_346[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+savefig('16KV_run_346__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+
+data_18KV_322 = []
+with open('18KV_run_322__ch_38.txt') as f:
+    for line in f:
+        data_18KV_322.append([float(x) for x in line.split()])
+        
+for i in range(len(data_18KV_322[0])):
+    data_18KV_322[0][i] =  data_18KV_322[0][i]/1000
+        
+plot(data_18KV_322[0], data_18KV_322[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+
+savefig('18KV_run_322__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
+
+data_20KV_334 = []
+with open('20KV_run_334__ch_38.txt') as f:
+    for line in f:
+        data_20KV_334.append([float(x) for x in line.split()])
+        
+for i in range(len(data_20KV_334[0])):
+    data_20KV_334[0][i] =  data_20KV_334[0][i]/1000
+        
+plot(data_20KV_334[0], data_20KV_334[1])
+xlabel(r'$Время, мкс$')
+ylabel(r'$Отн. ед. $')
+
+
+savefig('20KV_run_334__ch_38.pdf', bbox_inches = 'tight', format = 'pdf')
