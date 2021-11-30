@@ -21,9 +21,9 @@ using namespace std;
 
 int main()
 {
-	string file_name = "D:\\data\\171123\\x_ray_10kV_PMT550_0dB_coll_2mm\\x_ray_10kV_PMT550_0dB_coll_2mm";
+	string file_name = "D:\\data\\171123\\38 channel\\20_KV";
 	ostringstream file_name_ost;
-	file_name_ost<<file_name<<"\\run_374__ch_38.dat";
+	file_name_ost<<file_name<<"\\run_334__ch_38.dat";
 	vector<short int> data_tmp;
 	
 	int N_events_per_file=1000;
@@ -84,11 +84,20 @@ int main()
 	TGraph *signal = new TGraph(points_per_event, &x[0], &y[0]);
 	signal->Draw();
 	
+    
 	
-	ofstream ofs ("test.txt", std::ofstream::out);
+	
+	
+	ofstream ofs ("run_334__ch_38.dat.txt", std::ofstream::out);
 	for(int i = 0; i<points_per_event; i++)
 	{
-		ofs << x[i]<<"\t"<< y[i]<<"\n";
+		ofs << x[i]<<"\t";
+	}
+	ofs<< "\n";
+	
+	for(int i = 0; i<points_per_event; i++)
+	{
+		ofs << y[i]<<"\t";
 	}
 	ofs.close();
 	
