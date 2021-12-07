@@ -1,0 +1,25 @@
+data_20_KV_323=[]
+with open("20_KV_323.txt") as f:
+    for line in f:
+        data_20_KV_323.append([float(x) for x in line.split()])
+
+
+from matplotlib.pyplot import (title,legend, xlabel,ylabel,xticks,yticks, xscale,yscale,text,grid,plot,scatter,errorbar,hist,polar,contour,contourf,colorbar,clabel,imshow)
+plot(data_20_KV_323[0],data_20_KV_323[1])
+xlabel(r'$us$')
+ylabel(r'$V$')
+title(r'20 KV, run 323',fontsize=20)
+
+
+
+data_20_KV_331=[]
+with open("20_KV_331.txt") as f:
+    for line in f:
+        data_20_KV_331.append([float(x) for x in line.split()])
+data_20_KV_331[1][0]
+
+from matplotlib.pyplot import (title,legend, xlabel,ylabel,xticks,yticks, xscale,yscale,text,grid,plot,scatter,errorbar,hist,polar,contour,contourf,colorbar,clabel,imshow)
+plot(data_20_KV_331[0],data_20_KV_331[1])
+xlabel(r'$us$')
+ylabel(r'$V$')
+title(r'20 KV, run 331',fontsize=20)
